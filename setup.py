@@ -2,30 +2,38 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
 from glob import glob
-import os
+import pathlib
 
-DIR = os.path.dirname(__file__)
-FILE_REQ = os.path.join(DIR, "requirements.txt")
-REQUIRES = [i.strip() for i in open(FILE_REQ).readlines()]
+VERSION = "0.0.2"
+
+HERE = pathlib.Path(__file__).parent.resolve()
+
+REQUIRES = HERE.joinpath("requirements.txt").read_text().splitlines()
+README = HERE.joinpath("README.md").read_text()
+
 INFO = {
     "name": "Steven Hollingsworth",
     "email": "hollingsworth.stevend@gmail.com",
     "url": "https://github.com/shollingsworth/freeplane_tools",
 }
 
-DESCRTIPTION = """
-This package provides some tooling around translating freeplane mindmap files
-into other useful formats
-""".strip()
+# Can only be one line
+SHORT_DESCRTIPTION = "This package provides some tooling around translating freeplane mindmap files into other useful formats"
 
 setup(
     name="freeplane_tools",
-    version="0.0.1",
+    version=VERSION,
     license="MIT",
-    description=DESCRTIPTION,
+    description=SHORT_DESCRTIPTION,
+    long_description_content_type="text/markdown",
+    long_description=README,
     packages=find_packages(),
     install_requires=REQUIRES,
-    package_data={"": ["data/*"]},
+    package_data={
+        "": [
+            "examples/*",
+        ]
+    },
     keywords=[
         "freeplane",
         "mindmap",
