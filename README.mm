@@ -1,6 +1,6 @@
 <map version="freeplane 1.7.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="Freeplane Tools" FOLDED="false" ID="ID_1002858447" CREATED="1629749144699" MODIFIED="1629937619438" STYLE="oval">
+<node TEXT="Freeplane Tools" FOLDED="false" ID="ID_1002858447" CREATED="1629749144699" MODIFIED="1629938895387" STYLE="oval">
 <font SIZE="18"/>
 <hook NAME="MapStyle">
     <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" show_note_icons="true" fit_to_viewport="false"/>
@@ -63,7 +63,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="10" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="12" RULE="ON_BRANCH_CREATION"/>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <richcontent TYPE="NOTE">
 
@@ -73,11 +73,34 @@
   </head>
   <body>
     <p>
-      This [README.md](./README.md) was made with this program. [from README.mm](./README.mm)
+      If you hate writing Markdown, but love mindmaps (and using [freeplane](https://www.freeplane.org/wiki/index.php/Home) this toolset is for you.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      These python programs aim to ease translating a mindmap into various markdown formats.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      This document [README.md](./README.md) was made with `mm2github.py` with &#160;[from README.mm](./README.mm) as a source.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Enjoy!
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      Pull requests welcome. :)
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="Installation" POSITION="right" ID="ID_143871825" CREATED="1629902324496" MODIFIED="1629937387074">
 <edge COLOR="#ff0000"/>
@@ -105,24 +128,6 @@
     </p>
   </body>
 </html>
-
-</richcontent>
-</node>
-<node TEXT="Example" POSITION="right" ID="ID_1638091866" CREATED="1629938015115" MODIFIED="1629938450966">
-<edge COLOR="#007c7c"/>
-<richcontent TYPE="NOTE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      [This](./freeplane_tools/examples/template.mm) mindmap produces the following [markdown](./freeplane_tools/examples/template.md)
-    </p>
-  </body>
-</html>
-
 </richcontent>
 </node>
 <node TEXT="License" POSITION="right" ID="ID_1578673671" CREATED="1629902379529" MODIFIED="1629902575114">
@@ -140,6 +145,86 @@
   </body>
 </html>
 </richcontent>
+</node>
+<node TEXT="Quickstart" POSITION="right" ID="ID_254775212" CREATED="1629939067633" MODIFIED="1629939291687">
+<edge COLOR="#ff0000"/>
+<richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Run the following if you want a quick demo of how this works. Have `freeplane` installed before running this.
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ```
+    </p>
+    <p>
+      pip3 install freeplane_tools
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      mm2template.py mymindmap.mm
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      freeplane mymindmap.mm
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      # do your editing in freeplane
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      mm2github.py -w mymindmap.mm
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      ```<br/>
+    </p>
+    <p>
+      This will create: `mymindmap.md`
+    </p>
+  </body>
+</html>
+
+</richcontent>
+<node TEXT="Example" ID="ID_1638091866" CREATED="1629938015115" MODIFIED="1629939356849"><richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      Just want to look?
+    </p>
+    <p>
+      
+    </p>
+    <p>
+      [This](./freeplane_tools/examples/template.mm) mindmap produces the following [markdown](./freeplane_tools/examples/template.md)
+    </p>
+  </body>
+</html>
+
+</richcontent>
+</node>
 </node>
 <node TEXT="CLI Commands" POSITION="right" ID="ID_433247386" CREATED="1629929022711" MODIFIED="1629930535606">
 <edge COLOR="#00ffff"/>
