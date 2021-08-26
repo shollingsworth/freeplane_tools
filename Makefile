@@ -1,10 +1,11 @@
 .DEFAULT_GOAL := build
 
-documentation:
+documentation: clean
 	@echo "Running docs"
 	./bin/mm2github.py ./README.mm -w
 	./scripts/gencli.py
 	pdoc -o docs/ ./freeplane_tools --force
+	mv ./docs/freeplane_tools/* ./docs/
 
 install_local:
 	pip3 install .
