@@ -242,7 +242,7 @@
 </html>
 </richcontent>
 </node>
-<node TEXT="Building" POSITION="right" ID="ID_272462447" CREATED="1629902345130" MODIFIED="1629933580341">
+<node TEXT="Building" POSITION="right" ID="ID_272462447" CREATED="1629902345130" MODIFIED="1629939878239">
 <edge COLOR="#0000ff"/>
 <attribute NAME="child" VALUE="list"/>
 <richcontent TYPE="NOTE">
@@ -259,13 +259,14 @@
       ```
     </p>
     <p>
-      pip3 install twine pdoc
+      pip3 install twine pdoc3
     </p>
     <p>
       ```
     </p>
   </body>
 </html>
+
 </richcontent>
 <node TEXT="Install Locally from master" ID="ID_1204653861" CREATED="1629933386693" MODIFIED="1629933453117">
 <node TEXT="```&#xa;make install_local&#xa;```" ID="ID_672893705" CREATED="1629933401816" MODIFIED="1629933419483"/>
@@ -277,7 +278,7 @@
 <node TEXT="```&#xa;make documentation&#xa;```" ID="ID_370140854" CREATED="1629933472159" MODIFIED="1629933480001"/>
 </node>
 </node>
-<node TEXT="API" POSITION="right" ID="ID_98126724" CREATED="1629933218990" MODIFIED="1629933260551">
+<node TEXT="API" POSITION="right" ID="ID_98126724" CREATED="1629933218990" MODIFIED="1629939825483">
 <edge COLOR="#7c0000"/>
 <richcontent TYPE="NOTE">
 
@@ -287,10 +288,11 @@
   </head>
   <body>
     <p>
-      API / Class documentation can be found [here](./docs/index.html)
+      API / Class documentation can be found [here](./docs/index.md)
     </p>
   </body>
 </html>
+
 </richcontent>
 </node>
 </node>

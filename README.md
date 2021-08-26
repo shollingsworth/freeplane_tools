@@ -107,7 +107,7 @@ os / Package prerequisites:
 
 ```
 
-pip3 install twine pdoc
+pip3 install twine pdoc3
 
 ```
 
@@ -118,4 +118,4 @@ pip3 install twine pdoc
 * documentation only
    * ``` make documentation ```
 ## API [&#8593;](#toc)
-API / Class documentation can be found [here](./docs/index.html)
+API / Class documentation can be found [here](./docs/index.md)
