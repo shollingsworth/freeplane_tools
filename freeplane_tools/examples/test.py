@@ -2,15 +2,15 @@
 # -*- coding: utf-8 -*-
 """Test run of script."""
 import os
-from freeplane_tools.bitbucket import MindMap2StashMarkup
+from freeplane_tools.github import MindMap2GithubMarkdown
 
 DIR = os.path.dirname(os.path.abspath(__file__))
 TESTFILE = os.path.join(DIR, "template.mm")
 
 
 def test_bitbucket():
-    dfile = os.path.join(DIR, "bitbucket.md")
-    mm = MindMap2StashMarkup(TESTFILE)
+    dfile = os.path.join(DIR, "template.md")
+    mm = MindMap2GithubMarkdown(TESTFILE)
     mm.write_document(dfile)
 
 

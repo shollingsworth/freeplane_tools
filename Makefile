@@ -2,7 +2,9 @@
 
 documentation:
 	@echo "Running docs"
-	bin/mm2github.py ./README.mm -w
+	./bin/mm2github.py ./README.mm -w
+	./scripts/gencli.py
+	pdoc -o docs/ ./freeplane_tools
 
 install_local:
 	pip3 install .

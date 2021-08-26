@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 from glob import glob
 import pathlib
 
-VERSION = "0.0.2"
+VERSION = "0.0.3"
 
 HERE = pathlib.Path(__file__).parent.resolve()
 
@@ -32,6 +32,7 @@ setup(
     package_data={
         "": [
             "examples/*",
+            "data/*",
         ]
     },
     keywords=[

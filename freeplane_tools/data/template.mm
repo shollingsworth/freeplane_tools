@@ -1,6 +1,6 @@
 <map version="freeplane 1.7.0">
 <!--To view this file, download free mind mapping software Freeplane from http://freeplane.sourceforge.net -->
-<node TEXT="Freeplane Tools" FOLDED="false" ID="ID_1002858447" CREATED="1629749144699" MODIFIED="1629937619438" STYLE="oval">
+<node TEXT="Template" FOLDED="false" ID="ID_1002858447" CREATED="1629749144699" MODIFIED="1629936314234" STYLE="oval">
 <font SIZE="18"/>
 <hook NAME="MapStyle">
     <properties edgeColorConfiguration="#808080ff,#ff0000ff,#0000ffff,#00ff00ff,#ff00ffff,#00ffffff,#7c0000ff,#00007cff,#007c00ff,#7c007cff,#007c7cff,#7c7c00ff" show_icon_for_attributes="true" show_note_icons="true" fit_to_viewport="false"/>
@@ -63,23 +63,9 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="10" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="6" RULE="ON_BRANCH_CREATION"/>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
-<richcontent TYPE="NOTE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      This [README.md](./README.md) was made with this program. [from README.mm](./README.mm)
-    </p>
-  </body>
-</html>
-
-</richcontent>
-<node TEXT="Installation" POSITION="right" ID="ID_143871825" CREATED="1629902324496" MODIFIED="1629937387074">
+<node TEXT="Heading" POSITION="right" ID="ID_830578047" CREATED="1629847687835" MODIFIED="1629936268339">
 <edge COLOR="#ff0000"/>
 <richcontent TYPE="NOTE">
 
@@ -89,124 +75,42 @@
   </head>
   <body>
     <p>
-      To install this package from [pypy](https://pypi.org/project/freeplane-tools/) run the following command.
+      This is text under the heading
     </p>
     <p>
       
     </p>
     <p>
-      ```
+      And formatted with standard markdown.
     </p>
     <p>
-      pip3 install freeplane_tools
+      
     </p>
     <p>
-      ```
+      [google](http://www.google.com)
+    </p>
+    <p>
+      ---
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
-<node TEXT="Example" POSITION="right" ID="ID_1638091866" CREATED="1629938015115" MODIFIED="1629938146430">
-<edge COLOR="#007c7c"/>
-<richcontent TYPE="NOTE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      [This](../freeplane_tools/examples/template.mm) mindmap produces the following [markdown](../freeplane_tools/examples/template.md)
-    </p>
-  </body>
-</html>
-
-</richcontent>
-</node>
-<node TEXT="License" POSITION="right" ID="ID_1578673671" CREATED="1629902379529" MODIFIED="1629902575114">
+<node TEXT="Heading - w/ children as lists" POSITION="right" ID="ID_1233853918" CREATED="1629847817924" MODIFIED="1629936306330">
 <edge COLOR="#00ff00"/>
-<richcontent TYPE="NOTE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      See: [LICENSE](./LICENSE)
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="CLI Commands" POSITION="right" ID="ID_433247386" CREATED="1629929022711" MODIFIED="1629930535606">
-<edge COLOR="#00ffff"/>
-<richcontent TYPE="NOTE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      __CLI_COMMANDS__
-    </p>
-  </body>
-</html>
-</richcontent>
-</node>
-<node TEXT="Building" POSITION="right" ID="ID_272462447" CREATED="1629902345130" MODIFIED="1629933580341">
-<edge COLOR="#0000ff"/>
 <attribute NAME="child" VALUE="list"/>
-<richcontent TYPE="NOTE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      os / Package prerequisites:
-    </p>
-    <p>
-      ```
-    </p>
-    <p>
-      pip3 install twine pdoc
-    </p>
-    <p>
-      ```
-    </p>
-  </body>
-</html>
-</richcontent>
-<node TEXT="Install Locally from master" ID="ID_1204653861" CREATED="1629933386693" MODIFIED="1629933453117">
-<node TEXT="```&#xa;make install_local&#xa;```" ID="ID_672893705" CREATED="1629933401816" MODIFIED="1629933419483"/>
+<node TEXT="This is a url" ID="ID_1238586631" CREATED="1629847951939" MODIFIED="1629847962613" LINK="https://www.google.com"/>
+<node TEXT="Level 1 - foo" ID="ID_799619947" CREATED="1629848029644" MODIFIED="1629848099389">
+<node TEXT="Level 2 - foo" ID="ID_467686316" CREATED="1629848051380" MODIFIED="1629848061806">
+<node TEXT="Level 3 - foo" ID="ID_1156427952" CREATED="1629848044199" MODIFIED="1629848136775"/>
+<node TEXT="Level 3 - bar" ID="ID_1256375477" CREATED="1629848044199" MODIFIED="1629848139727"/>
+<node TEXT="Level 3 - baz" ID="ID_1150038660" CREATED="1629848044199" MODIFIED="1629848149484"/>
 </node>
-<node TEXT="build package" ID="ID_65759878" CREATED="1629933421052" MODIFIED="1629933430149">
-<node TEXT="```&#xa;make pkg&#xa;```" ID="ID_1653643308" CREATED="1629933431213" MODIFIED="1629933438239"/>
+<node TEXT="Level 2 - bar" ID="ID_102851487" CREATED="1629848063065" MODIFIED="1629848066291"/>
+<node TEXT="Level 2 - baz" ID="ID_79544560" CREATED="1629848066645" MODIFIED="1629848070561"/>
 </node>
-<node TEXT="documentation only" ID="ID_512766066" CREATED="1629933465912" MODIFIED="1629933471715">
-<node TEXT="```&#xa;make documentation&#xa;```" ID="ID_370140854" CREATED="1629933472159" MODIFIED="1629933480001"/>
-</node>
-</node>
-<node TEXT="API" POSITION="right" ID="ID_98126724" CREATED="1629933218990" MODIFIED="1629933260551">
-<edge COLOR="#7c0000"/>
-<richcontent TYPE="NOTE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      API / Class documentation can be found [here](./docs/index.html)
-    </p>
-  </body>
-</html>
-</richcontent>
+<node TEXT="Level 1 - bar" ID="ID_253937581" CREATED="1629848100401" MODIFIED="1629848103676"/>
+<node TEXT="Level 1 - baz" ID="ID_1155505516" CREATED="1629848103981" MODIFIED="1629848107019"/>
 </node>
 </node>
 </map>

@@ -1,3 +1,5 @@
 include requirements.txt
 include README.md
 include freeplane_tools/examples/*
+include freeplane_tools/data/*
+global-exclude *.pyc

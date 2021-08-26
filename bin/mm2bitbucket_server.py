@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""Freeplane Mindmap to Bitbucket Markdown."""
+"""Convert a Freeplane Mindmap to Bitbucket Markdown."""
 from freeplane_tools.bitbucket import MindMap2StashMarkup
 import re
+import argparse
 
 
 def main(args):
@@ -19,9 +20,8 @@ def main(args):
 
 
 if __name__ == "__main__":
-    import argparse
 
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "mindmap_file",
         help="mindmap_file help",
