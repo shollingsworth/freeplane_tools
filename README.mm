@@ -108,7 +108,7 @@
 
 </richcontent>
 </node>
-<node TEXT="Example" POSITION="right" ID="ID_1638091866" CREATED="1629938015115" MODIFIED="1629938146430">
+<node TEXT="Example" POSITION="right" ID="ID_1638091866" CREATED="1629938015115" MODIFIED="1629938450966">
 <edge COLOR="#007c7c"/>
 <richcontent TYPE="NOTE">
 
@@ -118,7 +118,7 @@
   </head>
   <body>
     <p>
-      [This](../freeplane_tools/examples/template.mm) mindmap produces the following [markdown](../freeplane_tools/examples/template.md)
+      [This](./freeplane_tools/examples/template.mm) mindmap produces the following [markdown](./freeplane_tools/examples/template.md)
     </p>
   </body>
 </html>

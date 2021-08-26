@@ -1,12 +1,12 @@
 # TOC
 * [Demo Mindmap](#demo-mindmap-)
    * [Heading 1](#heading-1-)
-   * [Heading 1 - children are list](#heading-1-children-are-list-)
-   * [Heading 1 - plain](#heading-1-plain-)
+   * [Heading 1 - children are list](#heading-1---children-are-list-)
+   * [Heading 1 - plain](#heading-1---plain-)
       * [Heading 2](#heading-2-)
          * [Heading 3](#heading-3-)
-         * [Heading 3 - But with children](#heading-3-but-with-children-)
-      * [Heading 2 - code snip](#heading-2-code-snip-)
+         * [Heading 3 - But with children](#heading-3---but-with-children-)
+      * [Heading 2 - code snip](#heading-2---code-snip-)
 
 
 # Demo Mindmap [&#8593;](#toc)

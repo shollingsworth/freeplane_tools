@@ -21,7 +21,7 @@ pip3 install freeplane_tools
 ```
 
 ## Example [&#8593;](#toc)
-[This](../freeplane_tools/examples/template.mm) mindmap produces the following [markdown](../freeplane_tools/examples/template.md)
+[This](./freeplane_tools/examples/template.mm) mindmap produces the following [markdown](./freeplane_tools/examples/template.md)
 ## License [&#8593;](#toc)
 See: [LICENSE](./LICENSE)
 ## CLI Commands [&#8593;](#toc)
