@@ -32,8 +32,7 @@
 &#34;&#34;&#34;Mindmap Template.&#34;&#34;&#34;
 import pathlib
 
-EXAMPLEDIR = pathlib.Path(__file__).parent.joinpath(&#34;examples&#34;)
-DATADIR = pathlib.Path(__file__).parent.joinpath(&#34;data&#34;)
+DATADIR = pathlib.Path(__file__).resolve().parent.joinpath(&#34;data&#34;)
 
 
 def get_template():

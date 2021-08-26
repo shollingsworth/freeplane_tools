@@ -1,16 +1,21 @@
-.DEFAULT_GOAL := build
+.DEFAULT_GOAL := pkg
+
+docs := ./docs
+srcdir := ./src
+pkgname := freeplane_tools
 
 documentation: clean
 	@echo "Running docs"
 	./bin/mm2github.py ./README.mm -w
 	./scripts/gencli.py
-	pdoc -o docs/ ./freeplane_tools --force --html
-	mv ./docs/freeplane_tools/* ./docs/
+	./scripts/genpypyreadme.py
+	pdoc -o $(docs) $(srcdir)/$(pkgname) --force --html
+	mv $(docs)/$(pkgname)/* $(docs)/
 
-install_local:
-	pip3 install .
+docker_test:
+	./scripts/dockertest.sh
 
-pkg: clean documentation
+pkg: documentation docker_test
 	@echo "Running PKG"
 	python3 setup.py sdist
 	twine check dist/*
@@ -19,8 +24,22 @@ upload:
 	@echo "Running upload"
 	twine upload --repository freeplane-tools dist/*
 
-build: pkg upload
-	@echo "Running ALL"
+bump_version: documentation pkg docker_test
+	# order is important here
+	$(eval tag:= $(shell ./scripts/version_bump.py))
+	./scripts/genchangelog.py
+	git add ./CHANGLOG.md
+	git add ./VERSION
+	git diff HEAD
+	git commit --amend
+	git tag v$(tag) HEAD
+
+push:
+	$(eval tag = $(shell cat VERSION))
+	git push -u origin v$(tag)
+
+release: upload
+	@echo "Running Release"
 
 clean:
-	rm -rfv docs/* dist/* *.egg-info
+	rm -rfv docs/* dist/* src/*.egg-info

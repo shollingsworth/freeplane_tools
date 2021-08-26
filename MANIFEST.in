@@ -1,6 +1,2 @@
-include requirements.txt
-include README.md
-include VERSION
-include freeplane_tools/examples/*
-include freeplane_tools/data/*
+include src/freeplane_tools/data/*
 global-exclude *.pyc

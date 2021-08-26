@@ -5,6 +5,13 @@ from freeplane_tools.data import get_template
 import argparse
 import re
 
+parser = argparse.ArgumentParser(description=__doc__)
+parser.add_argument(
+    "dest_file",
+    help="destination file",
+    type=str,
+)
+
 
 def main(args):
     """Run main function."""
@@ -17,12 +24,6 @@ def main(args):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "dest_file",
-        help="destination file",
-        type=str,
-    )
     args = parser.parse_args()
     # args = parser.parse_args(["./test.mm"])
     main(args)

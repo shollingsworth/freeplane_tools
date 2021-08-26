@@ -63,7 +63,7 @@
 </stylenode>
 </map_styles>
 </hook>
-<hook NAME="AutomaticEdgeColor" COUNTER="12" RULE="ON_BRANCH_CREATION"/>
+<hook NAME="AutomaticEdgeColor" COUNTER="15" RULE="ON_BRANCH_CREATION"/>
 <hook NAME="accessories/plugins/AutomaticLayout.properties" VALUE="ALL"/>
 <richcontent TYPE="NOTE">
 
@@ -202,7 +202,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="Example" ID="ID_1638091866" CREATED="1629938015115" MODIFIED="1629939356849"><richcontent TYPE="NOTE">
 
@@ -218,11 +217,10 @@
       
     </p>
     <p>
-      [This](./freeplane_tools/examples/template.mm) mindmap produces the following [markdown](./freeplane_tools/examples/template.md)
+      [This](./examples/template.mm) mindmap produces the following [markdown](./examples/template.md)
     </p>
   </body>
 </html>
-
 </richcontent>
 </node>
 </node>
@@ -266,7 +264,6 @@
     </p>
   </body>
 </html>
-
 </richcontent>
 <node TEXT="Install Locally from master" ID="ID_1204653861" CREATED="1629933386693" MODIFIED="1629933453117">
 <node TEXT="```&#xa;make install_local&#xa;```" ID="ID_672893705" CREATED="1629933401816" MODIFIED="1629933419483"/>
@@ -278,22 +275,10 @@
 <node TEXT="```&#xa;make documentation&#xa;```" ID="ID_370140854" CREATED="1629933472159" MODIFIED="1629933480001"/>
 </node>
 </node>
-<node TEXT="API" POSITION="right" ID="ID_98126724" CREATED="1629933218990" MODIFIED="1629940606231">
-<edge COLOR="#7c0000"/>
-<richcontent TYPE="NOTE">
-
-<html>
-  <head>
-    
-  </head>
-  <body>
-    <p>
-      API / Class documentation can be found [here](https://shollingsworth.github.io/freeplane_tools/)
-    </p>
-  </body>
-</html>
-
-</richcontent>
+<node TEXT="Other Docs" POSITION="right" ID="ID_1589081779" CREATED="1630019734423" MODIFIED="1630019736426">
+<edge COLOR="#00ff00"/>
+<node TEXT="API Docs" ID="ID_98126724" CREATED="1629933218990" MODIFIED="1630019799555" LINK="https://shollingsworth.github.io/freeplane_tools/"/>
+<node TEXT="Changelog" ID="ID_1226222508" CREATED="1630019741203" MODIFIED="1630019753030" LINK="./CHANGELOG.md"/>
 </node>
 </node>
 </map>

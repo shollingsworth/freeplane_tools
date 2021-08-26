@@ -2,11 +2,19 @@
 # -*- coding: utf-8 -*-
 import pathlib
 import os
-import subprocess
+import sys
+from argparse import ArgumentParser
 
-BASE = pathlib.Path(__file__).parent.parent
+ME = pathlib.Path(__file__)
+BASE = pathlib.Path(__file__).resolve().parent.parent
 BINDIR = BASE.joinpath("bin")
 README = BASE.joinpath("README.md")
+
+sys.path.append(str(BINDIR.absolute()))
+
+
+def get_parser(mod) -> ArgumentParser:
+    return mod.parser
 
 
 def _iterhelps():
@@ -18,9 +26,10 @@ def _iterhelps():
             ]
         ):
             continue
-        bn = script.name
-        out = subprocess.check_output([script, "-h"], encoding="utf-8")
-        yield bn, out
+        mod_name = script.name.replace(".py", "")
+        parser = get_parser(__import__(mod_name))
+        out = parser.format_help().replace(ME.name, script.name)
+        yield script.name, out
 
 
 def main():

@@ -16,7 +16,7 @@ If you hate writing Markdown, but love mindmaps (and using [freeplane](https://w
 
 These python programs aim to ease translating a mindmap into various markdown formats.
 
-This document [README.md](./README.md) was made with `mm2github.py` with  [from README.mm](./README.mm) as a source.
+This document [README.md](https://github.com/shollingsworth/freeplane_tools/blob/main/README.md) was made with `mm2github.py` with  [from README.mm](https://github.com/shollingsworth/freeplane_tools/blob/main/README.mm) as a source.
 
 Enjoy!
 
@@ -32,7 +32,7 @@ pip3 install freeplane_tools
 ```
 
 ## License [&#8593;](#toc)
-See: [LICENSE](./LICENSE)
+See: [LICENSE](https://github.com/shollingsworth/freeplane_tools/blob/main/LICENSE)
 ## Quickstart [&#8593;](#toc)
 Run the following if you want a quick demo of how this works. Have `freeplane` installed before running this.
 
@@ -56,7 +56,7 @@ This will create: `mymindmap.md`
 ### Example [&#8593;](#toc)
 Just want to look?
 
-[This](./examples/template.mm) mindmap produces the following [markdown](./examples/template.md)
+[This](https://github.com/shollingsworth/freeplane_tools/blob/main/examples/template.mm) mindmap produces the following [markdown](https://github.com/shollingsworth/freeplane_tools/blob/main/examples/template.md)
 ## CLI Commands [&#8593;](#toc)
 *mm2bitbucket_server.py*
 ```
