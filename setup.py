@@ -4,9 +4,9 @@ from setuptools import setup, find_packages
 from glob import glob
 import pathlib
 
-VERSION = "0.0.3"
 
 HERE = pathlib.Path(__file__).parent.resolve()
+VERSION = HERE.joinpath("VERSION").read_text().strip()
 
 REQUIRES = HERE.joinpath("requirements.txt").read_text().splitlines()
 README = HERE.joinpath("README.md").read_text()
