@@ -278,7 +278,7 @@
 <node TEXT="```&#xa;make documentation&#xa;```" ID="ID_370140854" CREATED="1629933472159" MODIFIED="1629933480001"/>
 </node>
 </node>
-<node TEXT="API" POSITION="right" ID="ID_98126724" CREATED="1629933218990" MODIFIED="1629939825483">
+<node TEXT="API" POSITION="right" ID="ID_98126724" CREATED="1629933218990" MODIFIED="1629940606231">
 <edge COLOR="#7c0000"/>
 <richcontent TYPE="NOTE">
 
@@ -288,7 +288,7 @@
   </head>
   <body>
     <p>
-      API / Class documentation can be found [here](./docs/index.md)
+      API / Class documentation can be found [here](https://shollingsworth.github.io/freeplane_tools/)
     </p>
   </body>
 </html>

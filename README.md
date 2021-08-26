@@ -118,4 +118,4 @@ pip3 install twine pdoc3
 * documentation only
    * ``` make documentation ```
 ## API [&#8593;](#toc)
-API / Class documentation can be found [here](./docs/index.md)
+API / Class documentation can be found [here](https://shollingsworth.github.io/freeplane_tools/)
