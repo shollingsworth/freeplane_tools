@@ -4,7 +4,6 @@
 import pathlib
 import configparser
 import re
-import os
 
 BASE = pathlib.Path(__file__).resolve().parent.parent
 CFG = BASE.joinpath("setup.cfg")

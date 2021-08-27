@@ -24,11 +24,11 @@ upload:
 	@echo "Running upload"
 	twine upload --repository freeplane-tools dist/*
 
-bump_version: documentation pkg docker_test
+bump_version:
 	# order is important here
 	$(eval tag:= $(shell ./scripts/version_bump.py))
 	./scripts/genchangelog.py
-	git add ./CHANGLOG.md
+	git add ./CHANGELOG.md
 	git add ./VERSION
 	git diff HEAD
 	git commit --amend
@@ -36,9 +36,10 @@ bump_version: documentation pkg docker_test
 
 push:
 	$(eval tag = $(shell cat VERSION))
+	git push -u origin HEAD
 	git push -u origin v$(tag)
 
-release: upload
+release: pkg upload push
 	@echo "Running Release"
 
 clean:
