@@ -1,2 +1,4 @@
 include src/freeplane_tools/data/*
+include VERSION
+include .pypyreadme
 global-exclude *.pyc

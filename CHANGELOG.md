@@ -1,6 +1,14 @@
+# v0.0.12
+#### Added missing files that causes pipy to fail
+> 2021-08-27 22:06 UTC [HEAD](https://github.com/shollingsworth/freeplane_tools/commit/HEAD)
+
+```
+distutils.errors.DistutilsOptionError: Version loaded from file: VERSION does not comply with PEP 440:
+```
+---
 # v0.0.11
 #### Updated Badge generator
-> 2021-08-27 21:13 UTC [HEAD](https://github.com/shollingsworth/freeplane_tools/commit/HEAD)
+> 2021-08-27 21:14 UTC [a35e7f0](https://github.com/shollingsworth/freeplane_tools/commit/a35e7f046cd59cbb3d395f77228e838f1d810756)
 
 #### Including signing on release / amend in makefile
 > 2021-08-27 17:15 UTC [062b141](https://github.com/shollingsworth/freeplane_tools/commit/062b1410a90c2e79153e05d1aa70fdae05260a9b)
