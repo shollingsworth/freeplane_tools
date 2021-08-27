@@ -111,7 +111,7 @@ os / Package prerequisites:
 
 ```
 
-pip3 install twine pdoc3
+pip3 install twine pydoctor
 
 ```
 

@@ -1,6 +1,11 @@
+# v0.0.13
+#### Moved from pdoc3 to pydoctor
+> 2021-08-27 22:49 UTC [HEAD](https://github.com/shollingsworth/freeplane_tools/commit/HEAD)
+
+---
 # v0.0.12
 #### Added missing files that causes pipy to fail
-> 2021-08-27 22:06 UTC [HEAD](https://github.com/shollingsworth/freeplane_tools/commit/HEAD)
+> 2021-08-27 22:07 UTC [b201edc](https://github.com/shollingsworth/freeplane_tools/commit/b201edc26ba64c44f087af018af13c67b4c90610)
 
 ```
 distutils.errors.DistutilsOptionError: Version loaded from file: VERSION does not comply with PEP 440:

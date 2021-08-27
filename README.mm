@@ -257,7 +257,7 @@
       ```
     </p>
     <p>
-      pip3 install twine pdoc3
+      pip3 install twine pydoctor
     </p>
     <p>
       ```

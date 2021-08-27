@@ -10,8 +10,7 @@ documentation: clean
 	./scripts/gencli.py
 	./scripts/genbadges.py
 	./scripts/genpypyreadme.py
-	pdoc -o $(docs) $(srcdir)/$(pkgname) --force --html
-	mv $(docs)/$(pkgname)/* $(docs)/
+	pydoctor --html-output=$(docs)/ $(srcdir)/$(pkgname)
 
 docker_test:
 	./scripts/dockertest.sh
