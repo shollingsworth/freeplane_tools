@@ -85,7 +85,7 @@
       
     </p>
     <p>
-      This document [README.md](./README.md) was made with `mm2github.py` with &#160;[from README.mm](./README.mm) as a source.
+      This document [README.md](./README.md) was made with `mm2github.py` with &#160;[README.mm](./README.mm) as a source.
     </p>
     <p>
       

@@ -18,7 +18,7 @@ If you hate writing Markdown, but love mindmaps (and using [freeplane](https://w
 
 These python programs aim to ease translating a mindmap into various markdown formats.
 
-This document [README.md](./README.md) was made with `mm2github.py` with  [from README.mm](./README.mm) as a source.
+This document [README.md](./README.md) was made with `mm2github.py` with  [README.mm](./README.mm) as a source.
 
 Enjoy!
 
