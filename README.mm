@@ -279,10 +279,25 @@
 <node TEXT="```make release```" ID="ID_1233882906" CREATED="1630074843085" MODIFIED="1630074853692"/>
 </node>
 </node>
-<node TEXT="Other Docs" POSITION="right" ID="ID_1589081779" CREATED="1630019734423" MODIFIED="1630019736426">
+<node TEXT="Other Docs" POSITION="right" ID="ID_1589081779" CREATED="1630019734423" MODIFIED="1630082904717">
 <edge COLOR="#00ff00"/>
-<node TEXT="API Docs" ID="ID_98126724" CREATED="1629933218990" MODIFIED="1630019799555" LINK="https://shollingsworth.github.io/freeplane_tools/"/>
-<node TEXT="Changelog" ID="ID_1226222508" CREATED="1630019741203" MODIFIED="1630019753030" LINK="./CHANGELOG.md"/>
+<richcontent TYPE="NOTE">
+
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p>
+      * [Api Docs](https://shollingsworth.github.io/freeplane_tools/)
+    </p>
+    <p>
+      * [Changelog](./CHANGELOG.md)
+    </p>
+  </body>
+</html>
+
+</richcontent>
 </node>
 </node>
 </map>

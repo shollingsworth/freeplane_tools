@@ -1,6 +1,23 @@
+# v0.0.9
+#### Updated README
+> 2021-08-27 16:49 UTC
+
+#### Fixed a typo in README
+> 2021-08-27 16:42 UTC
+
+#### Added badges to top of README
+> 2021-08-27 16:40 UTC
+
+#### Adjusted setup.cfg to include python versions
+> 2021-08-27 15:48 UTC
+
+#### Updated README
+> 2021-08-27 15:09 UTC
+
+---
 # v0.0.8
 #### Adjusted urls for pypi package, adjusted setup.py
-> 2021-08-27 15:05 UTC
+> 2021-08-27 15:07 UTC [b8c6623](https://github.com/shollingsworth/freeplane_tools/commit/b8c662383ecc29d05d0db3a9845f79944f9b592d)
 
 ```
 * Pinned the versions for dependent packages in setup.py

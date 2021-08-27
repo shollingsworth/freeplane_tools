@@ -9,8 +9,6 @@
    * [CLI Commands](#cli-commands-)
    * [Building](#building-)
    * [Other Docs](#other-docs-)
-      * [API Docs](#api-docs-)
-      * [Changelog](#changelog-)
 
 
 # Freeplane Tools [&#8593;](#toc)
@@ -125,8 +123,5 @@ pip3 install twine pdoc3
    * ```make bump_release```
    * ```make release```
 ## Other Docs [&#8593;](#toc)
-
-### API Docs [\[link\]](https://shollingsworth.github.io/freeplane_tools/) [&#8593;](#toc)
-
-### Changelog [\[link\]](./CHANGELOG.md) [&#8593;](#toc)
-
+* [Api Docs](https://shollingsworth.github.io/freeplane_tools/)
+* [Changelog](./CHANGELOG.md)
