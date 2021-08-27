@@ -265,7 +265,7 @@
   </body>
 </html>
 </richcontent>
-<node TEXT="Install Locally from master" ID="ID_1204653861" CREATED="1629933386693" MODIFIED="1629933453117">
+<node TEXT="Install Locally from current branch" ID="ID_1204653861" CREATED="1629933386693" MODIFIED="1630076932495">
 <node TEXT="```&#xa;make install_local&#xa;```" ID="ID_672893705" CREATED="1629933401816" MODIFIED="1629933419483"/>
 </node>
 <node TEXT="Build Package" ID="ID_65759878" CREATED="1629933421052" MODIFIED="1630074652959">

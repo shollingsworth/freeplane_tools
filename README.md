@@ -113,7 +113,7 @@ pip3 install twine pdoc3
 
 ```
 
-* Install Locally from master
+* Install Locally from current branch
    * ``` make install_local ```
 * Build Package
    * ``` make pkg ```
