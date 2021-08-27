@@ -9,6 +9,7 @@ documentation: clean
 	./bin/mm2github.py ./README.mm -w
 	./scripts/gencli.py
 	./scripts/genpypyreadme.py
+	./scripts/genbadges.py
 	pdoc -o $(docs) $(srcdir)/$(pkgname) --force --html
 	mv $(docs)/$(pkgname)/* $(docs)/
 
