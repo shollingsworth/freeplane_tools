@@ -8,8 +8,8 @@ documentation: clean
 	@echo "Running docs"
 	./bin/mm2github.py ./README.mm -w
 	./scripts/gencli.py
-	./scripts/genpypyreadme.py
 	./scripts/genbadges.py
+	./scripts/genpypyreadme.py
 	pdoc -o $(docs) $(srcdir)/$(pkgname) --force --html
 	mv $(docs)/$(pkgname)/* $(docs)/
 

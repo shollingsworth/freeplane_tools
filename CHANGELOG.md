@@ -1,18 +1,23 @@
+# v0.0.10
+#### Changed order of generator for badghes to include in .pypyreadme
+> 2021-08-27 16:54 UTC
+
+---
 # v0.0.9
 #### Updated README
-> 2021-08-27 16:49 UTC
+> 2021-08-27 16:52 UTC [968cab1](https://github.com/shollingsworth/freeplane_tools/commit/968cab1dab35929911a85ddd34f2626b9756fd43)
 
 #### Fixed a typo in README
-> 2021-08-27 16:42 UTC
+> 2021-08-27 16:42 UTC [4fe9606](https://github.com/shollingsworth/freeplane_tools/commit/4fe960639e61ba1cfe4d9a7d534c853156e139ec)
 
 #### Added badges to top of README
-> 2021-08-27 16:40 UTC
+> 2021-08-27 16:40 UTC [92797df](https://github.com/shollingsworth/freeplane_tools/commit/92797df1f7fe6581d7aaf4edc20a3af69996729b)
 
 #### Adjusted setup.cfg to include python versions
-> 2021-08-27 15:48 UTC
+> 2021-08-27 15:48 UTC [e11e256](https://github.com/shollingsworth/freeplane_tools/commit/e11e25676c9ed6f96416091ab5a431dc8fafa804)
 
 #### Updated README
-> 2021-08-27 15:09 UTC
+> 2021-08-27 15:09 UTC [a69f972](https://github.com/shollingsworth/freeplane_tools/commit/a69f972b0ceb6e1c0e7107208045fa720b0c9ae8)
 
 ---
 # v0.0.8
