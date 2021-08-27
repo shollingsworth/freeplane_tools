@@ -56,17 +56,18 @@ def main():
         except IndexError:
             end, start = tags[i], initial_commit
 
-        subcom = None if end != "HEAD" else "v" + VFILE.read_text()
-        endtxt = subcom if end == "HEAD" else end
+        endtxt = "v" + VFILE.read_text() if end == "HEAD" else end
         commit_list = commits(start, end)
         if not commit_list:
             continue
         content.append(f"# {endtxt}")
         for com in commit_list:
             dt, msg, desc = commit_details(com)
-            com = subcom or com
             content.append(f"#### {msg}")
-            content.append(f"> {dt} [{com[:7]}]({url}/commit/{com})")
+            if end == "HEAD":
+                content.append(f"> {dt}")
+            else:
+                content.append(f"> {dt} [{com[:7]}]({url}/commit/{com})")
             content.append("")
             if desc:
                 content.append(f"```")

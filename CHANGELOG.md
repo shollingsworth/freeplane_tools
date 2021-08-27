@@ -1,6 +1,11 @@
+# v0.0.7
+#### Fixing broken link with changelog
+> 2021-08-27 02:01 UTC
+
+---
 # v0.0.6
 #### Fixed broken link and url generation for CHANGELOG.md
-> 2021-08-27 01:52 UTC [v0.0.6](https://github.com/shollingsworth/freeplane_tools/commit/v0.0.6)
+> 2021-08-27 01:52 UTC [c4e75ef](https://github.com/shollingsworth/freeplane_tools/commit/c4e75ef5254f38504597e38da2293f23e21bc6fd)
 
 ---
 # v0.0.5
