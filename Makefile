@@ -31,11 +31,14 @@ upload:
 bump_version:
 	# order is important here
 	$(eval tag:= $(shell ./scripts/version_bump.py))
+	ifeq ($(tag), v)
+		$(error error running version_bump.py)
+	endif
 	./scripts/genchangelog.py
 	git add ./CHANGELOG.md
 	git add ./VERSION
 	git diff HEAD
-	git commit --amend
+	git commit -S --amend
 	git tag v$(tag) HEAD
 
 push:
