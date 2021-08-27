@@ -2,13 +2,21 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup
 from glob import glob
+from itertools import chain
 
+SCRIPTS = [
+    i
+    for i in chain(
+        glob("bin/*.py"),
+        glob("bin/*.sh"),
+    )
+]
 
 setup(
     name="freeplane_tools",
     install_requires=[
-        "beautifulsoup4",
-        "lxml",
+        "beautifulsoup4 >= 4.8.2",
+        "lxml >= 4.5.0",
     ],
-    scripts=list(glob("./bin/*.py")) + list(glob("./bin/*.sh")),
+    scripts=SCRIPTS,
 )

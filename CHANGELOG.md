@@ -1,6 +1,15 @@
+# v0.0.8
+#### Adjusted urls for pypi package, adjusted setup.py
+> 2021-08-27 15:05 UTC
+
+```
+* Pinned the versions for dependent packages in setup.py
+* Updated README
+```
+---
 # v0.0.7
 #### Fixing broken link with changelog
-> 2021-08-27 02:01 UTC
+> 2021-08-27 02:08 UTC [30c4a44](https://github.com/shollingsworth/freeplane_tools/commit/30c4a44039adc0adcc27b8c8d43b673e0884ee9f)
 
 ---
 # v0.0.6

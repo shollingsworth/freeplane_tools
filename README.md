@@ -115,10 +115,13 @@ pip3 install twine pdoc3
 
 * Install Locally from master
    * ``` make install_local ```
-* build package
+* Build Package
    * ``` make pkg ```
-* documentation only
-   * ``` make documentation ```
+* Release
+   * ```make documentation```
+      * Make sure git tree is clean
+   * ```make bump_release```
+   * ```make release```
 ## Other Docs [&#8593;](#toc)
 
 ### API Docs [\[link\]](https://shollingsworth.github.io/freeplane_tools/) [&#8593;](#toc)

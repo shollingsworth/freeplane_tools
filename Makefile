@@ -15,6 +15,9 @@ documentation: clean
 docker_test:
 	./scripts/dockertest.sh
 
+install_local:
+	pip3 install .
+
 pkg: documentation docker_test
 	@echo "Running PKG"
 	python3 setup.py sdist
