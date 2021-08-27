@@ -1,6 +1,14 @@
+# v0.0.11
+#### Updated Badge generator
+> 2021-08-27 21:02 UTC [e345a06](https://github.com/shollingsworth/freeplane_tools/commit/e345a06a59706a617d9ac16aaec5c557525ec77b)
+
+#### Including signing on release / amend in makefile
+> 2021-08-27 17:15 UTC [062b141](https://github.com/shollingsworth/freeplane_tools/commit/062b1410a90c2e79153e05d1aa70fdae05260a9b)
+
+---
 # v0.0.10
 #### Changed order of generator for badghes to include in .pypyreadme
-> 2021-08-27 16:54 UTC
+> 2021-08-27 16:56 UTC [f217d94](https://github.com/shollingsworth/freeplane_tools/commit/f217d9469f16357e1aeaf2d1c6a28bc1de18c67e)
 
 ---
 # v0.0.9

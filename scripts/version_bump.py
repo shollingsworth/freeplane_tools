@@ -39,7 +39,6 @@ def bump():
     with open(str(VFILE), "w") as fileh:
         fileh.write(new)
         fileh.flush()
-    print(new, flush=True)
 
 
 def main():

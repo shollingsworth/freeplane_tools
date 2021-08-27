@@ -38,6 +38,11 @@ def get_repo_url():
     return urls["Source Code"]
 
 
+def _sort_tags(tag):
+    arr = map(int, tag.replace("v", "").split("."))
+    return tuple(arr)
+
+
 def main():
     """Run main function."""
     cmd = "git rev-list --max-parents=0 HEAD".split()
@@ -45,8 +50,8 @@ def main():
     tags = subprocess.check_output(
         ["git", "tag", "-l"],
         encoding="utf-8",
-    ).splitlines()[::-1]
-
+    ).splitlines()
+    tags = sorted(tags, key=_sort_tags)[::-1]
     tags.insert(0, "HEAD")
     content = []
     url = get_repo_url()
@@ -61,11 +66,11 @@ def main():
         if not commit_list:
             continue
         content.append(f"# {endtxt}")
-        for com in commit_list:
+        for idx, com in enumerate(commit_list):
             dt, msg, desc = commit_details(com)
             content.append(f"#### {msg}")
-            if end == "HEAD":
-                content.append(f"> {dt}")
+            if idx == 0 and end == "HEAD":
+                content.append(f"> {dt} [HEAD]({url}/commit/HEAD)")
             else:
                 content.append(f"> {dt} [{com[:7]}]({url}/commit/{com})")
             content.append("")
