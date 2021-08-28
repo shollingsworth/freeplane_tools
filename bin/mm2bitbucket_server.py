@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """Convert a Freeplane Mindmap to Bitbucket Markdown."""
-from freeplane_tools.bitbucket import MindMap2StashMarkup
+from freeplane_tools.bitbucket import MindMap2BitBucket
 import re
 import argparse
 
@@ -29,7 +29,7 @@ parser.add_argument(
 
 def main(args):
     """Run main function."""
-    mm = MindMap2StashMarkup(args.mindmap_file)
+    mm = MindMap2BitBucket(args.mindmap_file)
     if args.write:
         outfile = args.outfile or re.sub(r".mm$", ".md", args.mindmap_file)
         if args.mindmap_file == outfile:

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """Testing README work."""
 from freeplane_tools.github import MindMap2GithubMarkdown
-from freeplane_tools.bitbucket import MindMap2StashMarkup
+from freeplane_tools.bitbucket import MindMap2BitBucket
 from freeplane_tools.data import get_template
 import pathlib
 import tempfile
@@ -32,7 +32,7 @@ def main():
         github.write_document(github_file)
         banner(f"Contents: {github_file.read_text()}")
 
-        bitbucket = MindMap2StashMarkup(gen)
+        bitbucket = MindMap2BitBucket(gen)
         banner(f"Writing: {bb_file}")
         bitbucket.write_document(bb_file)
         banner(f"Contents: {bb_file.read_text()}")

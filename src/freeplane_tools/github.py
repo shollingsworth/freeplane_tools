@@ -11,9 +11,11 @@ class GithubNode(BaseNode):
 
     @property
     def _toc_name(self):
+        """Table of contents name for node."""
         return re.sub("[^a-zA-Z0-9]", "-", self.text).lower() + "-"
 
     def format(self):
+        """Formatted output for node."""
         if self.list_depth >= 0:
             return self.list_format()
         lines = []
@@ -32,45 +34,9 @@ class GithubNode(BaseNode):
         return "\n".join(lines)
 
 
-class MindMapInterface(object):
-    # Needs to be defined in subclass
-    node = None
-
-    def __init__(self, srcfile):
-        self.mm = Mindmap(srcfile)
-        if self.__class__.node is None:
-            raise RuntimeError(f"Please define {__class__}.node")
-
-    def _iternodes(self):
-        for obj in self.mm.iternodes():
-            yield self.__class__.node(obj)
-
-    def _toc(self):
-        return "\n".join(n.toc_entry for n in self._iternodes() if n.toc_entry)
-
-    def _body(self):
-        return "\n".join(n.format() for n in self._iternodes())
-
-    def get_document(self):
-        txt = "\n".join(
-            [
-                '<a name="toc"></a>',
-                "# TOC",
-                self._toc(),
-                "",
-                "",
-                self._body(),
-                "",
-            ]
-        )
-        return txt
-
-    def write_document(self, dstfile):
-        with open(dstfile, "w") as fileh:
-            fileh.write(self.get_document())
-
-
 class MindMap2GithubMarkdown(MindMapInterface):
+    """Mindmap / Github Markdown Class."""
+
     node = GithubNode
 
     def get_document(self):

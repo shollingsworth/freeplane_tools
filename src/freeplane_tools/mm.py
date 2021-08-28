@@ -9,11 +9,13 @@ class Mindmap(object):
     """Mindmap File Interface."""
 
     def __init__(self, srcfile):
+        """Initialize Mindmap."""
         with open(srcfile) as fileh:
             content = fileh.read()
-        self.content = content
-        self.xml = BeautifulSoup(content, "lxml")
+        self.xml = BeautifulSoup(content, "lxml")  # type: BeautifulSoup
+        """BeautifulSoup xml iterator."""
 
     def iternodes(self) -> Iterable[Tag]:
-        for obj in self.xml.findAll("node"):
+        """Iterate through mindmap nodes."""
+        for obj in self.xml.findAll("node"):  # type: ResultSet
             yield obj

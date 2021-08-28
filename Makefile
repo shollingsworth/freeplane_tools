@@ -10,7 +10,11 @@ documentation: clean
 	./scripts/gencli.py
 	./scripts/genbadges.py
 	./scripts/genpypyreadme.py
-	pydoctor --html-output=$(docs)/ $(srcdir)/$(pkgname)
+	pydoctor -W \
+		--html-output=$(docs)/ \
+		--buildtime="1996-06-17 15:00:00" \
+		$(srcdir)/$(pkgname)
+	./scripts/checkundocced.py
 
 docker_test:
 	./scripts/dockertest.sh

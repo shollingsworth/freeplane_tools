@@ -10,11 +10,13 @@ class BitBucketNode(BaseNode):
 
     @property
     def _toc_name(self):
+        """Table of contents name for node."""
         plc = re.sub("[^a-zA-Z0-9 ]", "", self.text).lower().split()
         plc = "-".join(plc)
         return plc
 
     def format(self):
+        """Formatted string for node."""
         if self.list_depth >= 0:
             return self.list_format()
         lines = []
@@ -34,7 +36,9 @@ class BitBucketNode(BaseNode):
         return "\n".join(lines)
 
 
-class MindMap2StashMarkup(MindMapInterface):
+class MindMap2BitBucket(MindMapInterface):
+    """Stash Mindmap to Bitbucket Interface."""
+
     node = BitBucketNode
 
     def get_document(self):

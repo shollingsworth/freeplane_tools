@@ -34,12 +34,12 @@
       </div>
 
       <div class="extrasDocstring">
-        <p><code><span class="py-keyword">class</span> <span class="py-defname">MindMapInterface</span>(<span title="object">object</span>):</code></p><p>Known subclasses: <code><a href="freeplane_tools.bitbucket.MindMap2StashMarkup.html">freeplane_tools.bitbucket.MindMap2StashMarkup</a></code></p>
+        <p><code><span class="py-keyword">class</span> <span class="py-defname">MindMapInterface</span>(<span title="object">object</span>):</code></p><p>Known subclasses: <code><a href="freeplane_tools.bitbucket.MindMap2BitBucket.html">freeplane_tools.bitbucket.MindMap2BitBucket</a></code>, <code><a href="freeplane_tools.github.MindMap2GithubMarkdown.html">freeplane_tools.github.MindMap2GithubMarkdown</a></code></p>
         <p><a href="classIndex.html#freeplane_tools.base.MindMapInterface">View In Hierarchy</a></p>
       </div>
 
       <div class="moduleDocstring">
-        <div><p class="undocumented">Undocumented</p></div>
+        <div><p>Base class for Mindmaps.</p></div>
       </div>
 
       <div id="splitTables">
@@ -49,42 +49,42 @@
     
     <td>Class Variable</td>
     <td><code><a href="#node">node</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
+    <td><span>Abstract node type (subclass of BaseNode).</span></td>
   </tr><tr class="method">
     
     <td>Method</td>
     <td><code><a href="#__init__">__init__</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
+    <td><span>Initialize MindMapInterface with src file.</span></td>
   </tr><tr class="instancevariable">
     
     <td>Instance Variable</td>
     <td><code><a href="#mm">mm</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
+    <td><span>Mindmap class.</span></td>
   </tr><tr class="method">
     
     <td>Method</td>
     <td><code><a href="#get_document">get_document</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
+    <td><span>Return assembled Document.</span></td>
   </tr><tr class="method">
     
     <td>Method</td>
     <td><code><a href="#write_document">write_document</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
+    <td><span>Write assembled document to file.</span></td>
   </tr><tr class="method private">
     
     <td>Method</td>
     <td><code><a href="#_iternodes">_iternodes</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
+    <td><span>Iterate through .</span></td>
   </tr><tr class="method private">
     
     <td>Method</td>
     <td><code><a href="#_toc">_toc</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
+    <td><span>Toc values for mindmap.</span></td>
   </tr><tr class="method private">
     
     <td>Method</td>
     <td><code><a href="#_body">_body</a></code></td>
-    <td><span class="undocumented">Undocumented</span></td>
+    <td><span>Main Body for Mindmap.</span></td>
   </tr>
 </table>
         
@@ -110,7 +110,7 @@
   <div class="functionBody">
     
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>Abstract node type (subclass of BaseNode).</p></div> (type: <code><a href="freeplane_tools.base.BaseNode.html">BaseNode</a></code>)
   </div>
 </div><div class="basemethod">
   
@@ -128,7 +128,7 @@
   <div class="docstring functionBody">
     
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>Initialize MindMapInterface with src file.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">srcfile</td><td><span class="undocumented">Undocumented</span> (type: <code>str</code>)</td></tr></table></div>
   </div>
 </div><div class="baseinstancevariable">
   
@@ -146,7 +146,7 @@
   <div class="functionBody">
     
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>Mindmap class.</p></div> (type: <code><a href="freeplane_tools.mm.Mindmap.html">Mindmap</a></code>)
   </div>
 </div><div class="basemethod private">
   
@@ -164,7 +164,7 @@
   <div class="docstring functionBody">
     
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>Iterate through .</p></div>
   </div>
 </div><div class="basemethod private">
   
@@ -182,7 +182,7 @@
   <div class="docstring functionBody">
     
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>Toc values for mindmap.</p></div>
   </div>
 </div><div class="basemethod private">
   
@@ -200,7 +200,7 @@
   <div class="docstring functionBody">
     
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>Main Body for Mindmap.</p></div>
   </div>
 </div><div class="basemethod">
   
@@ -216,9 +216,9 @@
     
   </div>
   <div class="docstring functionBody">
-    <div class="interfaceinfo">overridden in <code><a href="freeplane_tools.bitbucket.MindMap2StashMarkup.html">freeplane_tools.bitbucket.MindMap2StashMarkup</a></code></div>
+    <div class="interfaceinfo">overridden in <code><a href="freeplane_tools.bitbucket.MindMap2BitBucket.html">freeplane_tools.bitbucket.MindMap2BitBucket</a></code>, <code><a href="freeplane_tools.github.MindMap2GithubMarkdown.html">freeplane_tools.github.MindMap2GithubMarkdown</a></code></div>
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>Return assembled Document.</p></div>
   </div>
 </div><div class="basemethod">
   
@@ -236,13 +236,13 @@
   <div class="docstring functionBody">
     
     
-    <div><p class="undocumented">Undocumented</p></div>
+    <div><p>Write assembled document to file.</p><table class="fieldTable"><tr class="fieldStart"><td class="fieldName">Parameters</td><td class="fieldArg">dstfile</td><td><span class="undocumented">Undocumented</span> (type: <code>str</code>)</td></tr></table></div>
   </div>
 </div>
 
       </div>
       <address>
-        <a href="index.html">API Documentation</a> for freeplane_tools, generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a> 21.2.2 at 2021-08-27 15:48:42.
+        <a href="index.html">API Documentation</a> for freeplane_tools, generated by <a href="https://github.com/twisted/pydoctor/">pydoctor</a> 21.2.2 at 1996-06-17 15:00:00.
       </address>
 
     </div>

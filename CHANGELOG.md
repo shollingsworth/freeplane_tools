@@ -1,6 +1,11 @@
+# v0.0.14
+#### Documented undocumented API classes / methods
+> 2021-08-28 00:18 UTC [HEAD](https://github.com/shollingsworth/freeplane_tools/commit/HEAD)
+
+---
 # v0.0.13
 #### Moved from pdoc3 to pydoctor
-> 2021-08-27 22:49 UTC [HEAD](https://github.com/shollingsworth/freeplane_tools/commit/HEAD)
+> 2021-08-27 22:49 UTC [b216289](https://github.com/shollingsworth/freeplane_tools/commit/b216289efacee2fd8ca99e28730f8bec03e1bc87)
 
 ---
 # v0.0.12
